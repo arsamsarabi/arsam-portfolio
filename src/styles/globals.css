@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply font-serif font-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-sans font-medium;
+}
+
+body {
+	@apply h-svh w-svw bg-black-100 text-white-100;
+}

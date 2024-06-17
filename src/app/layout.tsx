@@ -1,6 +1,7 @@
 import '#/styles/globals.css'
 import type { Metadata } from 'next'
 import { robotoSlab, roboto, indie } from '#/styles/fonts'
+import { ThemeProvider } from '#/components/ThemeProvider'
 
 export const metadata: Metadata = {
 	title: 'arsam.dev',
@@ -15,9 +16,16 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${roboto.className} ${robotoSlab.className} ${indie.className}`}
+				className={`${robotoSlab.className} ${indie.className} ${roboto.className}`}
 			>
-				<main className="h-svh w-svw">{children}</main>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<main className="bg-black-100 text-white-100">{children}</main>
+				</ThemeProvider>
 			</body>
 		</html>
 	)

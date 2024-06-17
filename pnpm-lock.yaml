@@ -14,6 +14,9 @@ dependencies:
   next:
     specifier: 14.2.4
     version: 14.2.4(react-dom@18.0.0)(react@18.0.0)
+  next-themes:
+    specifier: ^0.3.0
+    version: 0.3.0(react-dom@18.0.0)(react@18.0.0)
   react:
     specifier: ^18
     version: 18.0.0
@@ -40,12 +43,18 @@ devDependencies:
   eslint-config-next:
     specifier: 14.2.4
     version: 14.2.4(eslint@8.0.0)(typescript@5.0.2)
+  mini-svg-data-uri:
+    specifier: ^1.4.4
+    version: 1.4.4
   postcss:
     specifier: ^8
     version: 8.0.0
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
+  tailwindcss-animate:
+    specifier: ^1.0.7
+    version: 1.0.7(tailwindcss@3.4.1)
   typescript:
     specifier: ^5
     version: 5.0.2
@@ -1910,6 +1919,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /mini-svg-data-uri@1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
+    dev: true
+
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
@@ -1963,6 +1977,16 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-themes@0.3.0(react-dom@18.0.0)(react@18.0.0):
+    resolution: {integrity: sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==}
+    peerDependencies:
+      react: ^16.8 || ^17 || ^18
+      react-dom: ^16.8 || ^17 || ^18
+    dependencies:
+      react: 18.0.0
+      react-dom: 18.0.0(react@18.0.0)
+    dev: false
 
   /next@14.2.4(react-dom@18.0.0)(react@18.0.0):
     resolution: {integrity: sha512-R8/V7vugY+822rsQGQCjoLhMuC9oFj9SOi4Cl4b2wjDrseD0LRZ10W7R6Czo4w9ZznVSshKjuIomsRjvm9EKJQ==}
@@ -2627,6 +2651,14 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.7
     dev: false
+
+  /tailwindcss-animate@1.0.7(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+    dependencies:
+      tailwindcss: 3.4.1
+    dev: true
 
   /tailwindcss@3.4.1:
     resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
